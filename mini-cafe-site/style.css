@@ -92,7 +92,7 @@ footer {
     margin-top: 48px;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px 8px 8px 8px;
 }
 .button {
     display: inline-block;
