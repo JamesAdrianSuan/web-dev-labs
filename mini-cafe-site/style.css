@@ -1,0 +1,110 @@
+body, h1, h2, h3, p, ul {
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f5f2;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+header {
+    background: #795548;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 8px 8px 8px 8px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffe0b2;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(121,85,72,0.08);
+    padding: 32px;
+}
+
+h2 {
+    color: #6d4c41;
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+.menu-list {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.menu-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0cfc1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+.menu-item-name {
+    font-weight: 500;
+}
+
+.menu-item-price {
+    color: #8d6e63;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #6d4c41;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 48px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 0 0 8px 8px;
+}
+.button {
+    display: inline-block;
+    background: #795548;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+.button:hover {
+    background: #6d4c41;
+}
