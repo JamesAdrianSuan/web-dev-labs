@@ -108,3 +108,59 @@ footer {
 .button:hover {
     background: #6d4c41;
 }
+
+.about-top {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about-story {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.about-story-text {
+    flex: 1 1 300px;
+}
+
+.about-story-img {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.about-story-img img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(121,85,72,0.12);
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.about-value-card {
+    background: #f8f5f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(121,85,72,0.07);
+    padding: 24px;
+    text-align: center;
+}
+
+.about-value-card h3 {
+    color: #795548;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    .about-story {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
