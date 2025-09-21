@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Just Start Yoga – Start your yoga journey with easy classes, FAQs, and beginner-friendly guidance.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Start Yoga</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleFAQ(id) {
+      const answer = document.getElementById(id);
+      answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+  <script>
+  window.addEventListener('scroll', function() {
+    const btn = document.querySelector('.back-to-top');
+    if (window.scrollY > 200) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
+</script>
+</head>
+<body>
+  <header id="#top">
+    <h1>Just Start Yoga</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/schedule.html">Schedule</a></li>
+        <li><a href="pages/pricing.html">Pricing</a></li>
+        <li><a href="pages/locations.html">Locations</a></li>
+        <li><a href="pages/poses.html">Poses</a></li>
+        <li><a href="pages/meditation.html">Meditation</a></li>
+        <li><a href="pages/breathing.html">Breathing</a></li>
+        <li><a href="pages/routines.html">Routines</a></li>
+        <li><a href="pages/on-demand.html">On-Demand</a></li>
+        <li><a href="pages/resources.html">Resources</a></li>
+        <li><a href="pages/credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About section -->
+    <section>
+      <h2>About Just Start Yoga</h2>
+      <p>Just Start Yoga is designed for people who want to explore yoga in a simple and welcoming way. We know how intimidating it can feel to step into a class for the first time, so we focus on accessible sequences and clear instructions. Our mission is to guide students toward greater flexibility, calmness, and body awareness without pressure. Whether you want to join a studio class, practice at home with our online resources, or simply learn the basics of yoga, you’ll find supportive tools here. By combining movement, breathing, and mindfulness, our approach ensures that even complete beginners can grow in confidence. Every journey starts with one small step, and at Just Start Yoga, we take that step with you.</p>
+      <img src="images/hompage.jpg" alt="Beginners practicing yoga in a group class">
+    </section>
+
+    <!-- FAQ section -->
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq1')">Do I need to be flexible to start yoga?</h3>
+        <p id="faq1" style="display:none;">Not at all. Flexibility is a result of regular yoga practice, not a requirement. Our beginner classes are designed to help you improve over time without strain.</p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq2')">What equipment do I need?</h3>
+        <p id="faq2" style="display:none;">A yoga mat is helpful, but you can start on any comfortable surface. Some people like to use blocks or straps, but these are optional for beginners.</p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq3')">How often should I practice?</h3>
+        <p id="faq3" style="display:none;">For beginners, even 2–3 short sessions a week can make a noticeable difference. Consistency matters more than long sessions.</p>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have questions about our classes or resources, send us a message. We’d love to hear from you.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Beginner Yoga Hub</p>
+    <a href="#top" class="back-to-top">Back to top</a>
+  </footer>
+</body>
+</html>
