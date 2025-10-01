@@ -83,3 +83,25 @@ iframe {
     color: #06559e; /* Same color for hover and active states */
     text-decoration: none; /* Ensure no underline on hover */
 }
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar, .content {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    min-height: 180px;
+  }
+  .sidebar {
+    padding-bottom: 0;
+  }
+  .content {
+    padding-top: 0;
+  }
+  iframe {
+    min-height: 300px;
+  }
+}
